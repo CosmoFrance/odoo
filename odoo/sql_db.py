@@ -785,6 +785,9 @@ def db_connect(to, allow_uri=False):
     if _Pool is None:
         _Pool = ConnectionPool(int(tools.config['db_maxconn']))
 
+    if to == 'postgres':
+        to = tools.config['db_name']
+
     db, info = connection_info_for(to)
     if not allow_uri and db != to:
         raise ValueError('URI connections not allowed')
