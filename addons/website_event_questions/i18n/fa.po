@@ -15,9 +15,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-14 10:29+0000\n"
+"POT-Creation-Date: 2024-08-14 15:43+0000\n"
 "PO-Revision-Date: 2021-09-14 12:28+0000\n"
 "Last-Translator: Mostafa Barmshory <mostafa.barmshory@gmail.com>, 2024\n"
 "Language-Team: Persian (https://app.transifex.com/odoo/teams/41243/fa/)\n"
@@ -49,7 +49,7 @@ msgstr "پاسخ"
 #: model_terms:ir.ui.view,arch_db:website_event_questions.event_registration_answer_view_pivot
 #: model_terms:ir.ui.view,arch_db:website_event_questions.event_registration_answer_view_tree
 msgid "Answer Breakdown"
-msgstr ""
+msgstr "تجزیه پاسخ"
 
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_question__answer_ids
@@ -200,7 +200,7 @@ msgstr ""
 #. module: website_event_questions
 #: model:event.question.answer,name:website_event_questions.event_0_question_0_answer_0
 msgid "Mixed"
-msgstr ""
+msgstr "ترکیبی"
 
 #. module: website_event_questions
 #: model:event.question.answer,name:website_event_questions.event_type_data_conference_question_0_answer_1
@@ -240,12 +240,6 @@ msgstr "نوع سوال"
 #: code:addons/website_event_questions/models/event_question.py:0
 #, python-format
 msgid "Question cannot be linked to both an Event and an Event Type."
-msgstr ""
-
-#. module: website_event_questions
-#: code:addons/website_event_questions/models/event_question.py:0
-#, python-format
-msgid "Question cannot belong to both the event category and itself."
 msgstr ""
 
 #. module: website_event_questions

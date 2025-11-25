@@ -627,7 +627,7 @@ class ProductTemplate(models.Model):
         return {
             'name': _('Price Rules'),
             'view_mode': 'tree,form',
-            'views': [(self.env.ref('product.product_pricelist_item_tree_view_from_product').id, 'tree'), (False, 'form')],
+            'views': [(self.env.ref('product.product_pricelist_item_tree_view_from_product').id, 'tree')],
             'res_model': 'product.pricelist.item',
             'type': 'ir.actions.act_window',
             'target': 'current',
@@ -742,7 +742,7 @@ class ProductTemplate(models.Model):
 
             else:
                 for variant in existing_variants.values():
-                    is_combination_possible = self._is_combination_possible_by_config(
+                    is_combination_possible = tmpl_id._is_combination_possible_by_config(
                         combination=variant.product_template_attribute_value_ids,
                         ignore_no_variant=True,
                     )

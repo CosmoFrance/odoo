@@ -12,16 +12,16 @@
 # Odoo Thaidev <odoothaidev@gmail.com>, 2021
 # Cécile Collart <cco@odoo.com>, 2021
 # Wichanon Jamwutthipreecha, 2022
-# Wil Odoo, 2023
 # Rasareeyar Lappiam, 2024
+# Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-10 06:07+0000\n"
+"POT-Creation-Date: 2024-08-14 15:42+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
-"Last-Translator: Rasareeyar Lappiam, 2024\n"
+"Last-Translator: Wil Odoo, 2024\n"
 "Language-Team: Thai (https://app.transifex.com/odoo/teams/41243/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,6 +41,12 @@ msgstr "เพิ่มรูปภาพ"
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "\" alert with a"
 msgstr "เตือนด้วย"
+
+#. module: website
+#: code:addons/website/controllers/form.py:0
+#, python-format
+msgid "\"%s form submission\" <%s>"
+msgstr "\"%s ยื่นแบบฟอร์ม\" <%s>"
 
 #. module: website
 #: code:addons/website/models/website_rewrite.py:0
@@ -237,8 +243,8 @@ msgstr "+ ฟิลด์"
 #: model_terms:ir.ui.view,arch_db:website.template_header_hamburger_oe_structure_header_hamburger_3
 #: model_terms:ir.ui.view,arch_db:website.template_header_sidebar_oe_structure_header_sidebar_1
 #: model_terms:ir.ui.view,arch_db:website.template_header_vertical_oe_structure_header_vertical_2
-msgid "+1 (650) 555-0111"
-msgstr "+1 (650) 555-0111"
+msgid "+1 555-555-5556"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.searchbar_input_snippet_options
@@ -518,6 +524,7 @@ msgstr "<b>เพิ่ม</b> รูปภาพที่ถูกเลือ�
 
 #. module: website
 #. openerp-web
+#: code:addons/website/static/src/js/tours/tour_utils.js:0
 #: code:addons/website/static/src/js/tours/tour_utils.js:0
 #, python-format
 msgid "<b>Click Edit</b> to start designing your homepage."
@@ -860,23 +867,25 @@ msgstr ""
 #: model_terms:website.page,arch_db:website.contactus_page
 #: model_terms:website.page,arch_db:website.contactus_thanks
 msgid ""
-"<i class=\"fa fa-map-marker fa-fw mr-2\"/><span "
-"class=\"o_force_ltr\">Chaussée de Namur 40</span>"
+"<i class=\"fa fa-map-marker fa-fw mr-2\"/><span class=\"o_force_ltr\">3575 "
+"Fake Buena Vista Avenue</span>"
 msgstr ""
-"<i class=\"fa fa-map-marker fa-fw mr-2\"/><span "
-"class=\"o_force_ltr\">Chaussée de Namur 40</span>"
+
+#. module: website
+#: model_terms:ir.ui.view,arch_db:website.contactus_thanks_ir_ui_view
+#: model_terms:website.page,arch_db:website.contactus_thanks
+msgid ""
+"<i class=\"fa fa-phone fa-fw mr-2\"/><span class=\"o_force_ltr\">+1 "
+"555-555-55566</span>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus_thanks_ir_ui_view
 #: model_terms:website.page,arch_db:website.contactus_page
-#: model_terms:website.page,arch_db:website.contactus_thanks
 msgid ""
-"<i class=\"fa fa-phone fa-fw mr-2\"/><span class=\"o_force_ltr\">+ 32 81 81 "
-"37 00</span>"
+"<i class=\"fa fa-phone fa-fw mr-2\"/><span class=\"o_force_ltr\">+1 "
+"555-555-5556</span>"
 msgstr ""
-"<i class=\"fa fa-phone fa-fw mr-2\"/><span class=\"o_force_ltr\">+ 32 81 81 "
-"37 00</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.language_selector_add_language
@@ -1388,8 +1397,10 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.contactus
 #: model_terms:website.page,arch_db:website.contactus_page
-msgid "<span class=\"s_website_form_label_content\">Your Question</span>"
-msgstr "<span class=\"s_website_form_label_content\">คำถามของคุณ</span>"
+msgid ""
+"<span class=\"s_website_form_label_content\">Your Question</span>\n"
+"                                                            <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
@@ -1464,6 +1475,7 @@ msgstr ""
 "เปลี่ยนสีพื้นหลังตามบริบท และยังมีตัวเลือกการแสดงผลที่มีประสิทธิภาพ"
 
 #. module: website
+#: model:ir.model.fields,help:website.field_base_automation__website_published
 #: model:ir.model.fields,help:website.field_ir_actions_server__website_published
 #: model:ir.model.fields,help:website.field_ir_cron__website_published
 msgid ""
@@ -1779,6 +1791,13 @@ msgstr "เพิ่มในรถเข็น"
 #, python-format
 msgid "Add to menu"
 msgstr "เพิ่มในเมนู"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.seo.xml:0
+#, python-format
+msgid "Add {{ widget.keyword }}"
+msgstr ""
 
 #. module: website
 #. openerp-web
@@ -2199,6 +2218,7 @@ msgid "Autosizing"
 msgstr "ปรับขนาดอัตโนมัติ"
 
 #. module: website
+#: model:ir.model.fields,field_description:website.field_base_automation__website_published
 #: model:ir.model.fields,field_description:website.field_ir_actions_server__website_published
 #: model:ir.model.fields,field_description:website.field_ir_cron__website_published
 msgid "Available on the Website"
@@ -2224,6 +2244,7 @@ msgstr "ฉากหลัง"
 
 #. module: website
 #. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.s_chart_options
@@ -2903,6 +2924,7 @@ msgstr "ทำสำเนาหน้านี้"
 
 #. module: website
 #. openerp-web
+#: code:addons/website/static/src/js/menu/translate.js:0
 #: code:addons/website/static/src/js/menu/translate.js:0
 #: code:addons/website/static/src/snippets/s_image_gallery/000.xml:0
 #: code:addons/website/static/src/snippets/s_image_gallery/000.xml:0
@@ -4220,6 +4242,11 @@ msgid "Email"
 msgstr "อีเมล"
 
 #. module: website
+#: model:ir.model,name:website.model_mail_thread
+msgid "Email Thread"
+msgstr "เธรดอีเมล"
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "Email address"
@@ -4381,6 +4408,7 @@ msgid "Extension View"
 msgstr "Extension View"
 
 #. module: website
+#: model:ir.model.fields,field_description:website.field_base_automation__xml_id
 #: model:ir.model.fields,field_description:website.field_ir_actions_server__xml_id
 #: model:ir.model.fields,field_description:website.field_ir_cron__xml_id
 #: model:ir.model.fields,field_description:website.field_website_page__xml_id
@@ -5207,38 +5235,60 @@ msgid "Header Visible"
 msgstr "มองเห็นส่วนหัว"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
+#, python-format
+msgid "Headings"
+msgstr "หัวเรื่อง"
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "Headings 1"
 msgstr "หัวเรื่อง 1"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
+#, python-format
 msgid "Headings 2"
 msgstr "หัวเรื่อง 2"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
+#, python-format
 msgid "Headings 3"
 msgstr "หัวเรื่อง 3"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
+#, python-format
 msgid "Headings 4"
 msgstr "หัวเรื่อง 4"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
+#, python-format
 msgid "Headings 5"
 msgstr "หัวเรื่อง 5"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
+#, python-format
 msgid "Headings 6"
 msgstr "หัวเรื่อง 6"
 
@@ -5304,6 +5354,13 @@ msgstr "ซ่อน"
 #: model_terms:ir.ui.view,arch_db:website.s_popup_options
 msgid "Hide For"
 msgstr "ซ่อนเพื่อ"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/snippets/s_popup/000.js:0
+#, python-format
+msgid "Hide the cookies bar"
+msgstr "ซ่อนแถบคุกกี้"
 
 #. module: website
 #. openerp-web
@@ -5455,6 +5512,7 @@ msgid "ID"
 msgstr "ID"
 
 #. module: website
+#: model:ir.model.fields,help:website.field_base_automation__xml_id
 #: model:ir.model.fields,help:website.field_ir_actions_server__xml_id
 #: model:ir.model.fields,help:website.field_ir_cron__xml_id
 msgid "ID of the action if defined in a XML file"
@@ -5569,6 +5627,13 @@ msgstr "รูปภาพ"
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery_options
 msgid "Image Cover"
 msgstr "รูปภาพปก"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/snippets/s_image_gallery/000.xml:0
+#, python-format
+msgid "Image Gallery Dialog"
+msgstr "กล่องโต้ตอบคลังภาพ"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5975,18 +6040,12 @@ msgid "Is not equal to"
 msgstr "ไม่เท่ากับ"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/snippets/s_website_form/options.js:0
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
-#, python-format
 msgid "Is not set"
 msgstr "ไม่ได้ตั้งค่า"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/snippets/s_website_form/options.js:0
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
-#, python-format
 msgid "Is set"
 msgstr "ตั้งค่า"
 
@@ -6467,7 +6526,10 @@ msgid "Linkedin"
 msgstr "Linkedin"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
+#, python-format
 msgid "Links"
 msgstr "ลิงก์"
 
@@ -6700,6 +6762,7 @@ msgstr "ผู้ชาย"
 
 #. module: website
 #: code:addons/website/models/website.py:0
+#: model:ir.model,name:website.model_ir_ui_menu
 #: model:ir.model.fields,field_description:website.field_website_menu__name
 #: model_terms:ir.ui.view,arch_db:website.s_product_catalog
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
@@ -7858,6 +7921,11 @@ msgid "Popup"
 msgstr "ป็อปอัพ"
 
 #. module: website
+#: model:ir.model,name:website.model_portal_wizard_user
+msgid "Portal User Config"
+msgstr "การกำหนดค่าผู้ใช้พอร์ทัล"
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_big_icons_subtitles
 msgid "Portfolio"
 msgstr "Portfolio"
@@ -7950,6 +8018,13 @@ msgstr "ราคา"
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Primary"
 msgstr "หลัก"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
+#, python-format
+msgid "Primary Buttons"
+msgstr "ปุ่มหลัก"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -8133,6 +8208,11 @@ msgid "Qweb Field Contact"
 msgstr "ฟิลด์ติดต่อ Qweb"
 
 #. module: website
+#: model:ir.model,name:website.model_ir_qweb_field_html
+msgid "Qweb Field HTML"
+msgstr "ฟิลด์ HTML Qweb"
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_chart_options
 msgid "Radar"
 msgstr "เรดาร์"
@@ -8286,6 +8366,13 @@ msgstr "ลบทั้งหมด"
 #: model_terms:ir.ui.view,arch_db:website.theme_view_kanban
 msgid "Remove theme"
 msgstr "ลบธีม"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.seo.xml:0
+#, python-format
+msgid "Remove {{ widget.keyword }}"
+msgstr ""
 
 #. module: website
 #. openerp-web
@@ -8656,6 +8743,13 @@ msgid "Secondary"
 msgstr "รอง"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
+#, python-format
+msgid "Secondary Buttons"
+msgstr "ปุ่มรอง"
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Secondary Style"
 msgstr "สไตล์รอง"
@@ -8922,6 +9016,13 @@ msgstr "แสดงบน"
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Show reCaptcha Policy"
 msgstr "แสดงนโยบาย reCaptcha"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/snippets/s_popup/000.js:0
+#, python-format
+msgid "Show the cookies bar"
+msgstr "แสดงแถบคุกกี้"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -9462,9 +9563,12 @@ msgid "Test your robots.txt with Google Search Console"
 msgstr "ทดสอบ robots.txt ของคุณด้วย Google Search Console"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 #: model_terms:ir.ui.view,arch_db:website.snippet_options_header_brand
+#, python-format
 msgid "Text"
 msgstr "ข้อความ"
 
@@ -9539,6 +9643,14 @@ msgid "The company this website belongs to"
 msgstr "บริษัทที่เว็บไซต์นี้เป็นของ"
 
 #. module: website
+#: code:addons/website/wizard/portal_wizard.py:0
+#, python-format
+msgid ""
+"The contact \"%s\" has the same email as an existing user (%s) and has "
+"access to the same website."
+msgstr ""
+
+#. module: website
 #. openerp-web
 #: code:addons/website/static/src/js/editor/snippets.editor.js:0
 #, python-format
@@ -9592,6 +9704,7 @@ msgid "The full URL to access the document through the website."
 msgstr "URL แบบเต็มเพื่อเข้าถึงเอกสารผ่านเว็บไซต์"
 
 #. module: website
+#: model:ir.model.fields,help:website.field_base_automation__website_url
 #: model:ir.model.fields,help:website.field_ir_actions_server__website_url
 #: model:ir.model.fields,help:website.field_ir_cron__website_url
 msgid "The full URL to access the server action through the website."
@@ -9868,15 +9981,15 @@ msgid "This message has been posted on your website!"
 msgstr "ข้อความนี้ถูกโพสต์บนเว็บไซต์ของคุณ!"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_popup_options
-msgid "This page"
-msgstr "เพจนี้"
-
-#. module: website
 #: code:addons/website/models/website_visitor.py:0
 #, python-format
 msgid "This operator is not supported"
 msgstr "ไม่รองรับผู้ปฏิบัติการนี้"
+
+#. module: website
+#: model_terms:ir.ui.view,arch_db:website.s_popup_options
+msgid "This page"
+msgstr "เพจนี้"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.page_404
@@ -10818,6 +10931,13 @@ msgid "We are in good company."
 msgstr "เราอยู่ในบริษัทที่ดี"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/snippets/s_facebook_page/options.js:0
+#, python-format
+msgid "We couldn't find the Facebook page"
+msgstr ""
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
 msgid ""
 "We do not currently support Do Not Track signals, as there is no industry "
@@ -11013,6 +11133,7 @@ msgid "Website Pages"
 msgstr "หน้าของเว็บไซต์"
 
 #. module: website
+#: model:ir.model.fields,field_description:website.field_base_automation__website_path
 #: model:ir.model.fields,field_description:website.field_ir_actions_server__website_path
 #: model:ir.model.fields,field_description:website.field_ir_cron__website_path
 msgid "Website Path"
@@ -11068,6 +11189,7 @@ msgid "Website URL"
 msgstr " เว็บไซต์ URL"
 
 #. module: website
+#: model:ir.model.fields,field_description:website.field_base_automation__website_url
 #: model:ir.model.fields,field_description:website.field_ir_actions_server__website_url
 #: model:ir.model.fields,field_description:website.field_ir_cron__website_url
 msgid "Website Url"
@@ -11265,6 +11387,13 @@ msgstr "ปี"
 
 #. module: website
 #. openerp-web
+#: code:addons/website/static/src/xml/website_form_editor.xml:0
+#, python-format
+msgid "Yes"
+msgstr "ใช่"
+
+#. module: website
+#. openerp-web
 #: code:addons/website/static/src/xml/translator.xml:0
 #, python-format
 msgid "You are about to enter the translation mode."
@@ -11356,6 +11485,13 @@ msgstr ""
 "คุณไม่สามารถลบเมนูเว็บไซต์นี้ได้ "
 "เนื่องจากเมนูนี้ทำหน้าที่เป็นเมนูหลักเริ่มต้นสำหรับเว็บไซต์ใหม่ (เช่น /shop,"
 " /event, ...)"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/snippets/s_facebook_page/options.js:0
+#, python-format
+msgid "You didn't provide a valid Facebook link"
+msgstr ""
 
 #. module: website
 #: code:addons/website/controllers/backend.py:0
@@ -11725,6 +11861,13 @@ msgid "common answers, common questions"
 msgstr "คำตอบทั่วไป, คำถามทั่วไป"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.pageProperties.xml:0
+#, python-format
+msgid "connected"
+msgstr ""
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "content"
 msgstr "เนื้อหา"
@@ -11956,7 +12099,6 @@ msgstr "เมนู, ราคา"
 
 #. module: website
 #. openerp-web
-#: code:addons/website/static/src/snippets/s_website_form/options.js:0
 #: code:addons/website/static/src/xml/website_form_editor.xml:0
 #, python-format
 msgid "no value"
@@ -12000,6 +12142,13 @@ msgstr "เพจ, snippets, ...)"
 
 #. module: website
 #. openerp-web
+#: code:addons/website/static/src/xml/website.pageProperties.xml:0
+#, python-format
+msgid "password"
+msgstr "รหัสผ่าน"
+
+#. module: website
+#. openerp-web
 #: code:addons/website/static/src/components/configurator/configurator.xml:0
 #, python-format
 msgid "perfect website?"
@@ -12032,6 +12181,13 @@ msgstr "ราคา"
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "promotion, characteristic, quality"
 msgstr "โปรโมชั่น ลักษณะ คุณภาพ"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.pageProperties.xml:0
+#, python-format
+msgid "restricted_group"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.searchbar_input_snippet_options
@@ -12138,6 +12294,41 @@ msgstr "ใช่"
 #, python-format
 msgid "you do not need to ask for the consent"
 msgstr "คุณไม่จำเป็นต้องขอความยินยอม"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.seo.xml:0
+#, python-format
+msgid "{{ widget.keyword }} is used in page content"
+msgstr ""
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.seo.xml:0
+#, python-format
+msgid "{{ widget.keyword }} is used in page description"
+msgstr ""
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.seo.xml:0
+#, python-format
+msgid "{{ widget.keyword }} is used in page first level heading"
+msgstr ""
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.seo.xml:0
+#, python-format
+msgid "{{ widget.keyword }} is used in page second level heading"
+msgstr ""
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.seo.xml:0
+#, python-format
+msgid "{{ widget.keyword }} is used in page title"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_rating_options

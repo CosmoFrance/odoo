@@ -502,7 +502,7 @@ msgstr "خاکستری"
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_order__customer_count
 #, python-format
 msgid "Guests"
-msgstr ""
+msgstr "مهمانان"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -911,7 +911,7 @@ msgstr ""
 #: code:addons/pos_restaurant/static/src/xml/Screens/FloorScreen/EditBar.xml:0
 #, python-format
 msgid "Rename"
-msgstr ""
+msgstr "تغییر نام دهید"
 
 #. module: pos_restaurant
 #. openerp-web

@@ -856,6 +856,9 @@ $-transition-duration: 200ms;
             max-width: none;
             flex: auto;
         }
+        > .o_mega_menu_container_size {
+            transform: unset;
+        }
     }
 }
 
@@ -1250,7 +1253,7 @@ header {
                             padding-right: $nav-link-padding-x;
                             padding-left: $nav-link-padding-x;
                         }
-                        .dropdown-menu {
+                        .dropdown-menu:not(.o_mega_menu) {
                             position: absolute;
                         }
                     }
@@ -1750,6 +1753,7 @@ input[value*="data-oe-translation-id"] {
         // best workaround for now.
         > main {
             overflow-x: hidden;
+            overflow-y: hidden;
         }
     }
 }
