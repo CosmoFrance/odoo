@@ -7,6 +7,7 @@ import logging
 import pytz
 
 from odoo import api, fields, models
+from odoo.models import parse_read_group_spec
 from odoo.osv import expression
 
 _logger = logging.getLogger(__name__)
@@ -252,6 +253,7 @@ class MailActivityMixin(models.AbstractModel):
         return result
 
     def _read_progress_bar(self, domain, group_by, progress_bar):
+        parse_read_group_spec(group_by)
         group_by_fname = group_by.partition(':')[0]
         if not (progress_bar['field'] == 'activity_state' and self._fields[group_by_fname].store):
             return super()._read_progress_bar(domain, group_by, progress_bar)
